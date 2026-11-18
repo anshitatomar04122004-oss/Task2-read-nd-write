@@ -24,8 +24,8 @@ const server = http.createServer((req, res) => {
             res.end(`
                 <p>${messages.replace(/\n/g, '<br>')}</p>
                 <form action="/message" method="POST">
-                    <label>Name:</label>
-                    <input type="text" name="username">
+                    <label>Message:</label>
+                    <input type="text" name="message">
                     <button type="submit">Add</button>
                 </form>
             `);
